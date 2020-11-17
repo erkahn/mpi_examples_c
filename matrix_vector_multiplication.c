@@ -5,7 +5,7 @@
 
 
 void print_results(char *prompt, int a[N][N]);
-void Get_data2();
+//void Get_data2();
 
 int main(int argc, char *argv[]){
 
@@ -22,8 +22,8 @@ int main(int argc, char *argv[]){
     int columnIndex, rowIndex;
     
     MPI_Init(&argc, &argv);
-    if(rank == 0)
-        Get_data2();
+    /*if(rank == 0)
+        Get_data2();*/
     MPI_Comm_size(MPI_COMM_WORLD, &size);
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     
@@ -62,7 +62,7 @@ void print_results(char *prompt, int a[N][N]){
     }
     printf ("\n\n");
 }
-
+/*
 void Get_data2(
     int row,
     int column,
@@ -70,3 +70,4 @@ void Get_data2(
     int matrix2[N][N],
     int my_rank){
 }
+*/
